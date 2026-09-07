@@ -87,11 +87,11 @@ const RADIACION_MENSUAL = {
 
 // --- Tarifas de energía ($/kWh) - Cargo Variable ---
 const TARIFAS_ENERGIA = {
-    'urbano-no-bonif': { nombre: 'Residencial Urbano - Sin Subsidios', tarifa: 181.928, tarifaExcedente: 219.771, inyeccion: 93.703 },
-    'rural-no-bonif': { nombre: 'Residencial Rural - Sin Subsidios', tarifa: 264.576, tarifaExcedente: 332.854, inyeccion: 93.703 },
-    'urbano-sef': { nombre: 'Residencial Urbano - Bonificado SEF', tarifa: 103.903, tarifaExcedente: 181.928, inyeccion: 27.028 },
-    'rural-sef': { nombre: 'Residencial Rural - Bonificado SEF', tarifa: 191.635, tarifaExcedente: 264.576, inyeccion: 27.028 },
-    'comercial': { nombre: 'Comercial / Industrial', tarifa: 147.118, tarifaExcedente: 184.046, inyeccion: 78.755 }
+    'urbano-no-bonif': { nombre: 'Residencial Urbano - Sin Subsidios', tarifa: 191.306, tarifaExcedente: 229.417, inyeccion: 103.157 },
+    'rural-no-bonif': { nombre: 'Residencial Rural - Sin Subsidios', tarifa: 273.123, tarifaExcedente: 342.638, inyeccion: 103.157 },
+    'urbano-sef': { nombre: 'Residencial Urbano - Bonificado SEF', tarifa: 191.306, tarifaExcedente: 229.417, inyeccion: 41.955 },
+    'rural-sef': { nombre: 'Residencial Rural - Bonificado SEF', tarifa: 273.123, tarifaExcedente: 342.638, inyeccion: 41.955 },
+    'comercial': { nombre: 'Comercial / Industrial', tarifa: 174.233, tarifaExcedente: 211.609, inyeccion: 102.805 }
 };
 
 // --- Parámetros generales ---
