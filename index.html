@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador Solar - Provincia de Corrientes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">☀️</div>
+                <div>
+                    <h1>Calculador Solar</h1>
+                    <p>Provincia de Corrientes</p>
+                </div>
+            </div>
+            <nav>
+                <a href="#calculadora" class="active">Calculadora</a>
+                <a href="#como-funciona">Cómo funciona</a>
+                <a href="#beneficios">Beneficios</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Calculá tu sistema solar fotovoltaico</h2>
+                <p>Descubrí cuánta potencia solar necesitás, cuánta energía vas a generar y cuánto vas a ahorrar en tu factura de luz en Corrientes.</p>
+            </div>
+        </section>
+
+        <section id="calculadora" class="container calculator-section">
+            <div class="calculator-card full-width">
+                <h2>Datos de tu consumo</h2>
+
+                <div class="form-group">
+                    <label for="cobertura">Porcentaje de cobertura del consumo</label>
+                    <select id="cobertura">   
+                        <option value="0.2">20%</option>
+                        <option value="0.3">30%</option>
+                        <option value="0.5">50%</option>
+                        <option value="0.7">70%</option>
+                        <option value="0.9">90%</option>
+                    </select>
+                    <small>Indicá qué porcentaje de tu consumo mensual querés cubrir con energía solar.</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Consumo mensual de energía (kWh/mes)</label>
+                    <div class="meses-grid">
+                        <div class="mes-item">
+                            <label for="consumo-1">Ene</label>
+                            <input type="number" id="consumo-1" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                        <div class="mes-item">
+                            <label for="consumo-2">Feb</label>
+                            <input type="number" id="consumo-2" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                        <div class="mes-item">
+                            <label for="consumo-3">Mar</label>
+                            <input type="number" id="consumo-3" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                        <div class="mes-item">
+                            <label for="consumo-4">Abr</label>
+                            <input type="number" id="consumo-4" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                        <div class="mes-item">
+                            <label for="consumo-5">May</label>
+                            <input type="number" id="consumo-5" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                        <div class="mes-item">
+                            <label for="consumo-6">Jun</label>
+                            <input type="number" id="consumo-6" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                        <div class="mes-item">
+                            <label for="consumo-7">Jul</label>
+                            <input type="number" id="consumo-7" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                        <div class="mes-item">
+                            <label for="consumo-8">Ago</label>
+                            <input type="number" id="consumo-8" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                        <div class="mes-item">
+                            <label for="consumo-9">Sep</label>
+                            <input type="number" id="consumo-9" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                        <div class="mes-item">
+                            <label for="consumo-10">Oct</label>
+                            <input type="number" id="consumo-10" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                        <div class="mes-item">
+                            <label for="consumo-11">Nov</label>
+                            <input type="number" id="consumo-11" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                        <div class="mes-item">
+                            <label for="consumo-12">Dic</label>
+                            <input type="number" id="consumo-12" min="0" max="5000" step="10" placeholder="0" value="350">
+                        </div>
+                    </div>
+                    <small>Completá el consumo de cada mes según tu factura de luz.</small>
+                    <button type="button" id="btn-rellenar" class="btn-secundario">🔁 Rellenar todos los meses con el mismo valor</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="localidad">Localidad</label>
+                    <select id="localidad">
+                        <option value="corrientes">Corrientes Capital</option>
+                        <option value="goya">Goya</option>
+                        <option value="paso-de-los-libres">Paso de los Libres</option>
+                        <option value="santo-tome">Santo Tomé</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="curuzu-cuatia">Curuzú Cuatiá</option>
+                        <option value="monte-caseros">Monte Caseros</option>
+                        <option value="esquina">Esquina</option>
+                        <option value="bella-vista">Bella Vista</option>
+                        <option value="saladas">Saladas</option>
+                        <option value="itati">Itatí</option>
+                        <option value="ituzaingo">Ituzaingó</option>
+                        <option value="empedrado">Empedrado</option>
+                        <option value="san-luis-del-palmar">San Luis del Palmar</option>
+                        <option value="general-paz">General Paz</option>
+                        <option value="sauce">Sauce</option>
+                        <option value="la-cruz">La Cruz</option>
+                        <option value="alvear">Alvear</option>
+                        <option value="virasoro">Virasoro</option>
+                        <option value="mburucuya">Mburucuyá</option>
+                    </select>
+                </div>
+
+                <h2>Datos de tu vivienda</h2>
+
+                <div class="form-group">
+                    <label for="tipo-techo">Tipo de techo</label>
+                    <select id="tipo-techo">
+                        <option value="chapa">Chapa</option>
+                        <option value="teja">Teja</option>
+                        <option value="membrana">Membrana / Plano</option>
+                        <option value="fibrocemento">Fibrocemento</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="orientacion">Orientación del techo</label>
+                    <select id="orientacion">
+                        <option value="norte">Norte (óptima)</option>
+                        <option value="noreste">Noreste</option>
+                        <option value="noroeste">Noroeste</option>
+                        <option value="este">Este</option>
+                        <option value="oeste">Oeste</option>
+                        <option value="sur">Sur (no recomendada)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="inclinacion">Inclinación del techo</label>
+                    <select id="inclinacion">
+                        <option value="0">Plano (0°)</option>
+                        <option value="10">10°</option>
+                        <option value="15">15°</option>
+                        <option value="20">20°</option>
+                        <option value="25">25°</option>
+                        <option value="30">30°</option>
+                        <option value="35">35°</option>
+                        <option value="40">40°</option>
+                        <option value="45">45°</option>
+                    </select>
+                    <small>La inclinación óptima para Corrientes es de aproximadamente 27°.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoría de usuario</label>
+                    <select id="categoria">
+                        <option value="urbano-no-bonif">Residencial Urbano - Sin Subsidios</option>
+                        <option value="rural-no-bonif">Residencial Rural - Sin Subsidios</option>
+                        <option value="urbano-sef">Residencial Urbano - Bonificado SEF</option>
+                        <option value="rural-sef">Residencial Rural - Bonificado SEF</option>
+                        <option value="comercial">Comercial / Industrial</option>
+                    </select>
+                    <small>Según el cuadro tarifario de la DPEC (Resolución Nº 148/2026, Cuadro Nº 108-D).</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="tarifa">Tarifa de energía (ARS/kWh)</label>
+                    <input type="number" id="tarifa" min="50" max="500" step="10" placeholder="Ej: 182" value="182">
+                    <small>Precio del kWh según el cuadro tarifario DPEC. Podés ajustarlo si tu factura incluye otros cargos.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="tarifa-inyeccion">Reintegro por inyección a red (ARS/kWh)</label>
+                    <input type="number" id="tarifa-inyeccion" min="0" max="500" step="10" placeholder="Ej: 94" value="94">
+                    <small>Tarifa de reintegro a prosumidores según DPEC: $93,703/kWh (residencial sin subsidios).</small>
+                </div>
+
+                <button id="calcular" class="btn-primary">Calcular mi sistema solar</button>
+            </div>
+
+            <div id="resultados" class="results-card full-width hidden">
+                <div class="sistema-optimo" id="sistema-optimo">
+                    <h2>⚡ Sistema Óptimo Recomendado</h2>
+                    <div id="descripcion-sistema" class="descripcion-sistema">
+                    </div>
+                </div>
+                <h2>Resultados</h2>
+                
+                <div class="result-grid">
+                    <div class="result-item">
+                        <div class="result-icon">🔆</div>
+                        <div class="result-label">Potencia del sistema</div>
+                        <div class="result-value" id="result-potencia">-</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">🛠️</div>
+                        <div class="result-label">Inversor recomendado</div>
+                        <div class="result-value" id="result-inversor">-</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">⚡</div>
+                        <div class="result-label">Generación anual estimada</div>
+                        <div class="result-value" id="result-generacion">-</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">📊</div>
+                        <div class="result-label">Cobertura de tu consumo</div>
+                        <div class="result-value" id="result-cobertura">-</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">💰</div>
+                        <div class="result-label">Ahorro anual estimado</div>
+                        <div class="result-value" id="result-ahorro">-</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">🌱</div>
+                        <div class="result-label">CO₂ evitado por año</div>
+                        <div class="result-value" id="result-co2">-</div>
+                    </div>
+                </div>
+
+                <div class="grafico-container">
+                    <h3>📊 Consumo vs Generación Mensual</h3>
+                    <div id="grafico-barras" class="grafico-barras">
+                    </div>
+                    <div class="grafico-leyenda">
+                        <span class="leyenda-item"><span class="leyenda-color consumo"></span> Consumo (kWh)</span>
+                        <span class="leyenda-item"><span class="leyenda-color generacion"></span> Generación Solar (kWh)</span>
+                    </div>
+                </div>
+
+                <div class="result-detail">
+                    <h3>Detalle del sistema recomendado</h3>
+                    <ul id="detalle-sistema">
+                    </ul>
+                </div>
+
+                <div class="disclaimer">
+                    <p><strong>Nota:</strong> Los resultados son estimaciones basadas en datos promedio de radiación solar de la provincia de Corrientes. El rendimiento real puede variar según las condiciones climáticas, sombras, calidad de los equipos y otros factores. Se recomienda consultar con un instalador habilitado para un dimensionamiento preciso.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="container info-section">
+            <h2>¿Cómo funciona?</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-number">1</div>
+                    <h3>Ingresá tu consumo</h3>
+                    <p>Completá el consumo mensual de energía que figura en tu factura de luz.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-number">2</div>
+                    <h3>Datos de tu vivienda</h3>
+                    <p>Indicá el tipo de techo, orientación e inclinación para calcular el mejor rendimiento.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-number">3</div>
+                    <h3>Obtené tu sistema</h3>
+                    <p>Recibí la potencia recomendada, la generación estimada y el ahorro proyectado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="container info-section">
+            <h2>Beneficios de la energía solar en Corrientes</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">☀️</div>
+                    <h3>Alta radiación solar</h3>
+                    <p>Corrientes recibe en promedio entre 4.5 y 5.0 kWh/m² por día, ideal para generación fotovoltaica.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💵</div>
+                    <h3>Ahorro en tu factura</h3>
+                    <p>Reducí hasta un 30-70% de tu consumo de red con un sistema bien dimensionado.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌿</div>
+                    <h3>Energía limpia</h3>
+                    <p>Generá tu propia energía renovable y reducí tu huella de carbono.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>Protección ante aumentos</h3>
+                    <p>Generá tu propia energía y protegéte de los aumentos en las tarifas eléctricas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Calculador Solar - Provincia de Corrientes, Argentina</p>
+            <p class="footer-note">Herramienta de estimación. Los resultados son orientativos y no constituyen una cotización oficial.</p>
+        </div>
+    </footer>
+
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
